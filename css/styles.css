@@ -11,18 +11,17 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   background-color: var(--white-color);
   color: var(--primary-text-color);
 }
 
-
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway" sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--accent-color);
 }
@@ -38,11 +37,15 @@ body {
 /* навігація */
 nav a {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--title-text-color);
+}
+
+nav .portfolio,
+nav .studio {
+  color: var(--accent-color);
 }
 
 .navigation a:hover,
@@ -50,29 +53,26 @@ nav a {
   color: var(--accent-color);
 }
 
- .navigation-list {
-  list-style: none;
- }
-
-.contacts {
+.navigation-list {
   list-style: none;
 }
 
+.contacts-list {
+  list-style: none;
+}
 
-.contacts a {
+.contacts-list a {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.contacts-list a:hover,
+.contacts-list a:focus {
   color: var(--accent-color);
 }
-
 
 .section-hero {
   background-color: #2f303a;
@@ -88,6 +88,7 @@ nav a {
 }
 
 .hero-button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -99,44 +100,54 @@ nav a {
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 
 /* секція "особливості" */
 
-.features {
+.features-list {
   list-style: none;
 }
 
-.feature-title {
+.section-features h3 {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: var(--title-text-color)
 }
 
-.features p {
-  font-size: 14px;
+.section-features p {
   line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 /* секція "чим ми займаемося" */
 
-.our-job {
+.job-list {
   list-style: none;
 }
 
+.job-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--title-text-color)
+}
 
 /* секція "наша команда" */
-.our-team {
+.section-team {
   background-color: #f5f4fa;
 }
 
-.our-team-list {
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color:var(--title-text-color)
+}
+
+.team-list {
   list-style: none;
 }
 
@@ -144,14 +155,11 @@ nav a {
   background-color: var(--white-color);
 }
 
-.our-team p {
-  font-size: 14px;
+.section-team p {
   line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
-.our-team h3 {
+.section-team h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
@@ -164,18 +172,14 @@ footer {
   background-color: #2f303a;
 }
 
-
 .logo-studio2 {
   color: var(--white-color);
 }
 
 /* адреса */
 address {
-  font-weight: 400;
-  font-size: 14px;
+  font-style: normal;
   line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--white-color);
 }
 
 .address-list {
@@ -185,7 +189,7 @@ address {
 address a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-} 
+}
 
 address a:hover,
 address a:focus {
@@ -198,35 +202,35 @@ address a:focus {
 
 /* portfolio */
 
-.filters {
+.filters-list {
   list-style: none;
 }
 
-.filters button {
+.filter-item button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  letter-spacing: 0.03em;
-  cursor:pointer;
+  cursor: pointer;
   background-color: #f5f4fa;
-  color: #212121;
+  color: var(--title-text-color)
 }
 
-.filters button:hover,
-.filters button:focus {
+.filter-item button:hover,
+.filter-item button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
 
-.projects {
+.projects-list {
   list-style: none;
 }
 
-.projects a {
+.project-item a {
   text-decoration: none;
 }
 
-.projects h2 {
+.project-item h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -234,9 +238,7 @@ address a:focus {
   color: var(--title-text-color);
 }
 
-.projects p {
+.project-item p {
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
